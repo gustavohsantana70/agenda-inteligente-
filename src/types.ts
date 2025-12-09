@@ -11,6 +11,7 @@ export interface Service {
   color: string; // Hex color for calendar
   category?: string;
   active: boolean;
+  isPremium?: boolean; // New field for premium restriction
 }
 
 export type AppointmentStatus = 'scheduled' | 'confirmed' | 'completed' | 'cancelled' | 'noshow' | 'rescheduled' | 'pending';
@@ -43,7 +44,8 @@ export interface User {
   name: string;
   email: string;
   role: 'admin' | 'provider' | 'client';
-  plan: 'free' | 'pro';
+  plan: 'free' | 'pro' | 'paid'; // Updated to include 'paid'
+  planExpiry?: string; // ISO string for plan expiration
 }
 
 // --- New Types for Settings & Integrations ---
