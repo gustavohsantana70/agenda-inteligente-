@@ -1,0 +1,5 @@
+{
+  "name": "CronosFlow",
+  "description": "A modern appointment booking and management system (MVP) featuring public scheduling, admin dashboard, and calendar management.",
+  "requestFramePermissions": []
+}
